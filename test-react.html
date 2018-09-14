@@ -1,0 +1,29 @@
+<html DOCTYPE!>
+  <head>
+      <meta charset="UTF-8">
+      <title>React Test</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js" ></script>
+  </head>
+  <body>
+      <div id="root"></div>
+      <div id="test"></div>
+      <script type="text/babel">
+        var greetingBlock = <div><p>Hello, world!</p></div>
+
+        class Human extends React.Component {
+          render() {
+            return (
+              greetingBlock
+            );
+          }
+        }
+
+        ReactDOM.render(
+          <Human />,
+          document.getElementById('root')
+        );
+      </script>
+  </body>
+</html>
